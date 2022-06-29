@@ -7,21 +7,18 @@ const Footer:FC =()=> {
   return (
     <div className='footer'>
       <div className="footer__title">
-        NonamebotDashboard
+        Nonamebot
       </div>
       <div className="footer_links">
         {footerLinks && footerLinks.map((link,idx)=>
         <div onClick={()=>window.open(`${link.path}`,"_blank")} key={`${link.id}:${idx}`} className="footer_link">
-          
             {link.svg}
-          
          <span>
             {link.title}
         </span>
         </div>
         )}
       </div>
-
     </div>
   )
 }

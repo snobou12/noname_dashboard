@@ -19,14 +19,16 @@
 .header__logo{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 10px;
     cursor: pointer;
+    img{
+            height: 40px;
+    }
     &:hover{
         .header__logo_col{
             span{
-        color: rgb(50, 106, 202);
-
+                color: rgb(50, 106, 202);
             }
         }
     }

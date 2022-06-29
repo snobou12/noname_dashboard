@@ -5,10 +5,9 @@ type PricingProps={
 }
 const Pricing:FC<PricingProps> = React.forwardRef<HTMLDivElement>((ref,props)=> {
     const cardItems=[
-        {id:0,title:"Free test week"},
-        {id:1,title:"24/7 Support"},
-        {id:2,title:"Constant updates"},
-        {id:3,title:"The cost does not depend on the money turnover"},
+        {id:0,title:"24/7 support"},
+        {id:1,title:"Constant updates"},
+        {id:2,title:"The cost does not depend on the cash flow"},
 
     ]
   return (
@@ -21,11 +20,11 @@ const Pricing:FC<PricingProps> = React.forwardRef<HTMLDivElement>((ref,props)=> 
                 Basic
             </div>
             <div className="pricing__card_price">
-                <span>$68</span>
+                <span>$10</span>
                 <span> / Month</span>
             </div>
             <div className="pricing__card_description">
-                You get access to your admin panel, and your customers can use the dashboard and view license information.
+                You get access to the bot and all its features.
             </div>
             <div className="pricing__card_items">
                 {cardItems && cardItems.map((cardItem,idx)=>
@@ -37,7 +36,7 @@ const Pricing:FC<PricingProps> = React.forwardRef<HTMLDivElement>((ref,props)=> 
             </div>
             <div className="pricing__button">
                 <button className='custom_button custom_button--primary'>
-                    Try for free
+                    Buy
                 </button>
             </div>
         </div>
