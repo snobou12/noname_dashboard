@@ -41,6 +41,10 @@ const Header: FC<HeaderProps> = ({
 	React.useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
 	});
+
+	const handleClickDash = () => {
+		window.open(`https://nonamebot31.herokuapp.com/api/bot`, "_self");
+	};
 	return (
 		<div className={`header ${bg && "header--bg"}`}>
 			<div onClick={() => navigate("/")} className="header__logo">
@@ -63,7 +67,7 @@ const Header: FC<HeaderProps> = ({
 			</div>
 			<div className="header__button">
 				<button
-					onClick={() => navigate("/bind")}
+					onClick={handleClickDash}
 					className="custom_button custom_button--primary header__dashboard_link"
 				>
 					DASHBOARD
@@ -95,7 +99,10 @@ const Header: FC<HeaderProps> = ({
 							</div>
 						))}
 				</div>
-				<button className="custom_button custom_button--primary header__dashboard_link">
+				<button
+					onClick={handleClickDash}
+					className="custom_button custom_button--primary header__dashboard_link"
+				>
 					DASHBOARD
 				</button>
 			</div>

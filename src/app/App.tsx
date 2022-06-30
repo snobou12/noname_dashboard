@@ -1,8 +1,11 @@
 
 import React, { FC } from "react";
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import { Footer, Header } from "../components";
 import { Bind, Main } from "../pages";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./App.scss";
 
 const App: FC = () => {
@@ -54,6 +57,7 @@ const App: FC = () => {
 						/>
 						<Route path="/bind" element={<Bind />} />
 					</Routes>
+					<ToastContainer />
 				</div>
 			</div>
 		</>

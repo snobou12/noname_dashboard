@@ -21,9 +21,9 @@ const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
 );
 root.render(
-	<QueryClientProvider client={queryClient}>
-		<BrowserRouter>
+	// <QueryClientProvider client={queryClient}>
+		<BrowserRouter basename={window.location.pathname || ''}>
 			<App />
 		</BrowserRouter>
-	</QueryClientProvider>
+	// </QueryClientProvider>
 );
